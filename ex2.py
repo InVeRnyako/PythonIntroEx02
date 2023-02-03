@@ -7,14 +7,10 @@
 # Числа x и y будут меньше их суммы s. Значит оба числа будут находится в диапазоне [1, s).
 # Если s > 1000 - проверяем по диапазону [s - 1000,1000], т.к. минимальная сумма ограничивает минимальное число.
 
-# print("Введите сумму чисел: ")
-# sum = input()
-# print("Введите произведение чисел: ")
-# mult = input()
-x = int(input())
-y = int(input())
-sum = x + y
-mult = x * y
+print("Введите сумму чисел: ")
+sum = int(input())
+print("Введите произведение чисел: ")
+mult = int(input())
 
 if sum < 1000:
     low_lim = 1
@@ -31,5 +27,5 @@ for i in range(low_lim, high_lim):
         num_y = sum - i
         break
 
-print("X:", num_x, "Y:", num_y, "checks: ", check_count)
+print("X:", num_x, "Y:", num_y)
 
